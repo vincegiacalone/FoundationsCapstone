@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background-color: rgb(255, 245, 232);
+  background-attachment: fixed;
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(25, 0, 35);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.italic {
+  font-style: italic;
+}
+
+h1 {
+  font-family: "Lora", serif;
+}
+
+h2 {
+  color: #274933;
+  text-align: center;
+}
+
+#my-strings h2 {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: 900;
+  color: #274933;
+}
+
+.container {
+  background: linear-gradient(rgb(255, 245, 205), rgb(255, 210, 126));
+  width: 50vh;
+  height: auto;
+  margin: 30px;
+  padding: 15px 30px 15px 30px;
+  border-radius: 5px;
+  outline-style: outset;
+  outline-width: 4px;
+  outline-color: rgb(255, 245, 205);
+  position: relative;
+  font-weight: 400;
+}
+
+#strings-container {
+  margin: 0% 10% 0% 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#strings-container .container {
+  margin: 10px;
+}
+
+#strings-container p {
+  padding: 2%;
+}
+
+.form-group {
+  margin: 15px;
+}
+
+input {
+  font-size: medium;
+  width: 92%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #d4d4d4;
+  border-radius: 5px;
+  color: #232323;
+  background-color: snow;
+  padding: 3px 10px 3px 10px;
+  box-shadow: outset;
+}
+
+.currency-wrap {
+  position: relative;
+}
+
+.currency-code {
+  position: absolute;
+  left: 8px;
+  top: 8.5px;
+  color: rgb(103, 103, 103);
+}
+
+.currency-code-edit {
+  position: relative;
+  left: 5%;
+  top: 5%;
+  color: rgb(103, 103, 103);
+}
+
+#price {
+  padding-left: 20px;
+  width: 89%;
+}
+
+.price-edit {
+  padding-left: 20px;
+  width: 85%;
+}
+
+textarea {
+  max-width: 94%;
+  min-width: 94%;
+  height: 80px;
+  min-height: fit-content;
+  max-height: 200px;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+select {
+  padding: 3px;
+  border-radius: 5%;
+  box-shadow: outset;
+}
+
+.card-buttons {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: auto;
+  height: auto;
+  padding: 10px 15px 10px 15px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 15px;
+  background: #3f7552;
+  color: rgb(255, 255, 255);
+  margin: 0 10% 0 10%;
+}
+
+button:hover {
+  color: #3f7552;
+  outline: auto;
+  outline-offset: 54cap;
+  background: rgb(255, 245, 232);
+}
+
+details summary {
+  color: #274933;
+  padding-bottom: 2%;
+}
+
+details summary:hover {
+  color:#5a9d71
+}
+
+details[open] summary {
+  opacity: 20%;
+}
+
+.hidden {
+  display: none;
+}

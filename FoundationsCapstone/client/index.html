@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>myStrings: Viola</title>
+  </head>
+  <body>
+    <header>
+      <h1><span class="italic">myStrings: </span>Viola</h1>
+    </header>
+    <main>
+      <section id="add-new-set">
+        <h2>Add New Set</h2>
+        <form name="form" id="form" class="container">
+          <div class="form-group">
+            <input type="text" name="brand" placeholder="Brand Name" />
+          </div>
+
+          <div class="form-group">
+            <div class="currency-wrap">
+              <span class="currency-code">$</span>
+              <input
+                id="price"
+                type="number"
+                step=".01"
+                min="0"
+                name="price"
+                placeholder="Price"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="gauge"><span class="label">STRING GAUGE: </span></label>
+            <select name="gauge">
+              <option>Weich</option>
+              <option>Medium</option>
+              <option>Stark</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="strings"><span class="label">STRING(S): </span></label>
+            <select name="strings">
+              <option>Set</option>
+              <option>C</option>
+              <option>G</option>
+              <option>D</option>
+              <option>A</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="rating"><span class="label">RATING: </span></label>
+            <select name="rating">
+              <option>★</option>
+              <option>★★</option>
+              <option>★★★</option>
+              <option>★★★★</option>
+              <option>★★★★★</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date"><span class="label">DATE PUT ON:</span></label>
+            <input name="date" type="date" />
+          </div>
+
+          <div class="form-group">
+            <label for="notes"><span class="label">NOTES:</span></label>
+            <p></p>
+            <textarea name="notes"></textarea>
+          </div>
+
+          <div class="card-buttons">
+            <button type="submit" id="new-set">ADD NEW SET</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="my-strings">
+        <h2>My Strings</h2>
+        <div id="strings-container"></div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
